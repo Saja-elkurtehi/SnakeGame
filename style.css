@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* center horizontally */
+    justify-content: center; /* center vertically */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+  
+  canvas {
+    background: #4caf50; /* lighter green for the game area */
+    border: 3px solid #1b5e20; /* darker green border */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    /* size bigger: */
+    width: 480px;
+    height: 480px;
+    image-rendering: pixelated; /* keeps crisp pixel edges */
+  }
+  
+  /* Result popup styling */
+#resultBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #bbdefb; /* light blue background */
+    border: 3px solid #1976d2; /* strong blue border */
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #0d47a1; /* dark blue text */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    z-index: 9999;
+    display: none; /* hidden by default */
+  }
+  
+  /* Button inside popup */
+  #resultBox button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #1976d2;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #resultBox button:hover {
+    background: #0d47a1;
+  }
+  #menuBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #bbdefb;
+    border: 3px solid #1976d2;
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    color: #0d47a1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    z-index: 10000;
+  }
+  
+  #menuBox button {
+    margin: 15px 10px 0 10px;
+    padding: 10px 25px;
+    background: #1976d2;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+  }
+  
+  #menuBox button:hover {
+    background: #0d47a1;
+  }
+  
